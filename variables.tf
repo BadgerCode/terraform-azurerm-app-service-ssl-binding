@@ -1,7 +1,7 @@
 variable "count_of_app_services" {}
 
 variable "app_services_and_fqdns" {
-  type = "map"
+  type = map
 
   description = <<eof
     "webapp01" = "webapp01.example.com,spacialName.example.com"]
@@ -11,12 +11,12 @@ variable "app_services_and_fqdns" {
 
 variable "certificate_thumbprint" {
   description = "Certifcate Thumbprint"
-  type        = "string"
+  type        = string
 }
 
 variable "resource_group_name" {
   description = "Azure Group Name"
-  type        = "string"
+  type        = string
 }
 
 locals {
